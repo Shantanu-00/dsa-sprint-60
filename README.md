@@ -14,4 +14,6 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
 ---
 
 ## Progress
-- ✅ Day 1: String Rotation using KMP ([code](./strings/kmp-string-matching/solution.cpp))  
+- ✅ Day 1:  
+  - String Rotation using KMP ([code](./strings/kmp-string-matching/solution.cpp))  
+  - Kadane’s Algorithm – Maximum Subarray Sum ([code](./arrays/kadane's-algorithm-max-subarray/solution.cpp))  
