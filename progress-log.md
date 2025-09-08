@@ -18,7 +18,7 @@
 
 ---
 
-## ✅ Day 2 (2025-09-05)
+## ✅ Day 2 (2025-09-07)
 
 **1. Roman Numeral to Integer – Subtractive Parsing**  
 - **Problem:** Roman numeral to integer conversion  
