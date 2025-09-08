@@ -51,7 +51,7 @@
 **1. Implement Atoi**  
 - **Problem:** String to integer 32 bit conversion with edge cases.
 - **Folder:** [/strings/atoi](./strings/atoi) 
-- **Insight:**Strip leading spaces → determine sign → convert digit chars to integers → accumulate using `ans = ans * 10 + digit` → check overflow → return `ans * sign`.
+- **Insight:** Strip leading spaces → determine sign → convert digit chars to integers → accumulate using `ans = ans * 10 + digit` → check overflow → return `ans * sign`.
 
 
 ---
