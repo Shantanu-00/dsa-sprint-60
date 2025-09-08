@@ -45,3 +45,18 @@
 - **Problem:** Rearrange to next lexicographic permutation  
 - **Folder:** [/arrays/next-permutation](./arrays/next-permutation-int)  
 - **Insight:** Find pivot, swap with next greater, then reverse suffix. `O(n)` time, `O(1)` space.
+
+## ✅ Day 3 (2025-09-08)
+
+**1. Implement Atoi**  
+- **Problem:** String to integer 32 bit conversion with edge cases.
+- **Folder:** [/strings/atoi](./strings/atoi) 
+- **Insight:**Strip leading spaces → determine sign → convert digit chars to integers → accumulate using `ans = ans * 10 + digit` → check overflow → return `ans * sign`.
+
+
+---
+
+**2. Maximum Subarray using Kadane's Algorithm with printing the subarray**  
+- **Problem:** Maximum Subarray using Kadane's Algorithm with print of the subarray 
+- **Folder:** [/arrays/kadanes-algorithm-max-subarray](./arrays/kadanes-algorithm-max-subarray)  
+- **Insight:** need 3 variable one `start` which resets to `i` whenever sum is set to zero and 2 `startarray` and `endarray` which you will update with start and end indexes whenever maximum is updated `startarray` with `start` and `endarray` with current `i` when max was being updated you can then output the array via these indexes.
