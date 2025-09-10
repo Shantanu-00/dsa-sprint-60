@@ -29,8 +29,6 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
   - Implement Atoi ([code](./strings/atoi/solution.cpp))  
   - Kadane’s Algorithm – Maximum Subarray Sum with print of the Subarray([code](./arrays/kadane's-algorithm-max-subarray/solution.cpp),[README file](./arrays/kadane's-algorithm-max-subarray/README.md))  
 
-
-
 ---
 
 - ✅ **Day 4**:  
