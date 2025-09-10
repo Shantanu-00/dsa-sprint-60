@@ -28,3 +28,13 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
 - ✅ **Day 3**:  
   - Implement Atoi ([code](./strings/atoi/solution.cpp))  
   - Kadane’s Algorithm – Maximum Subarray Sum with print of the Subarray([code](./arrays/kadane's-algorithm-max-subarray/solution.cpp),[README file](./arrays/kadane's-algorithm-max-subarray/README.md))  
+
+
+
+---
+
+- ✅ **Day 4**:  
+  - Best Time to Buy and Sell Stock ([code](./arrays/stock-buy-sell/solution.cpp))  
+  - Longest Palindromic Substring – Expand Around Center ([code](./strings/longest-palindrome-substring/solution.cpp))
+---
+

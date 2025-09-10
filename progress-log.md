@@ -60,3 +60,27 @@
 - **Problem:** Maximum Subarray using Kadane's Algorithm with print of the subarray 
 - **Folder:** [/arrays/kadanes-algorithm-max-subarray](./arrays/kadanes-algorithm-max-subarray)  
 - **Insight:** need 3 variable one `start` which resets to `i` whenever sum is set to zero and 2 `startarray` and `endarray` which you will update with start and end indexes whenever maximum is updated `startarray` with `start` and `endarray` with current `i` when max was being updated you can then output the array via these indexes.
+
+
+
+---
+
+## ✅ Day 4 (2025-09-10)
+
+**1. Best Time to Buy and Sell Stock**  
+- **Problem:** Find the maximum profit from a single buy-sell transaction given daily stock prices.  
+- **Folder:** [/arrays/buy-sell-stock](./arrays/stock-buy-sell)  
+- **Insight:** Track the minimum price seen so far (`mini`) and compute potential profit at each step using `price - mini`. Update the maximum profit whenever a better opportunity is found. This greedy approach runs in O(n) time and uses constant space.
+
+---
+
+**2. Longest Palindromic Substring (Expand Around Center)**  
+- **Problem:** Return the longest substring in a given string that is a palindrome.  
+- **Folder:** [/strings/longest-palindromic-substring](./strings/longest-palindrome-substring)  
+- **Insight:** Instead of checking all substrings (O(n³)), expand outward from each character and each gap between characters—covering both odd and even-length palindromes. There are `2n - 1` centers in total. For each center, expand while characters match and update the longest palindrome found so far. This reduces the time complexity to O(n²) with no extra space.
+
+---
+
+
+
+
