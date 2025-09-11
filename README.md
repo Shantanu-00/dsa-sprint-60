@@ -14,17 +14,17 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
 ---
 
 ## Progress
-
+---
 - ✅ **Day 1**:  
   - String Rotation using KMP ([code](./strings/kmp-string-matching/solution.cpp))  
   - Kadane’s Algorithm – Maximum Subarray Sum ([code](./arrays/kadane's-algorithm-max-subarray/solution.cpp))  
-
+---
 - ✅ **Day 2**:  
   - Roman Numeral to Integer – Subtractive Parsing ([code](./strings/roman-to-integer/solution.cpp))  
   - Anagram Check – Frequency Count ([code](./strings/anagram-checking/solution.cpp))  
   - Two Sum – Find Indices of Target Pair ([code](./arrays/2-sum-problem/solution.cpp))  
   - Next Permutation of an Integer Array ([code](./arrays/next-permutation-int/solution.cpp))  
-
+---
 - ✅ **Day 3**:  
   - Implement Atoi ([code](./strings/atoi/solution.cpp))  
   - Kadane’s Algorithm – Maximum Subarray Sum with print of the Subarray([code](./arrays/kadane's-algorithm-max-subarray/solution.cpp),[README file](./arrays/kadane's-algorithm-max-subarray/README.md))  
@@ -36,3 +36,9 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
   - Longest Palindromic Substring – Expand Around Center ([code](./strings/longest-palindrome-substring/solution.cpp))
 ---
 
+- ✅ **Day 5**:  
+  - Frequency Sort – Bucket-Based Character Reordering  
+    ([code](./strings/sort-characters-by-frequency/solution.cpp))  
+  - Majority Element – Boyer-Moore Voting Algorithm  
+    ([code](./arrays/majority-element-half/solution.cpp))  
+---

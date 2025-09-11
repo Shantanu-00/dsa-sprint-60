@@ -81,6 +81,21 @@
 
 ---
 
+## ✅ Day 5 (2025-09-11)
+
+**1. Frequency Sort – Bucket-Based Character Reordering**  
+- **Problem:** Reorder characters in a string by descending frequency.  
+- **Folder:** [/strings/frequency-sort](./strings/sort-characters-by-frequency)  
+- **Insight:** Count character frequencies using a hash map, then place characters into buckets indexed by frequency. Traverse buckets from high to low, appending characters to construct the result. Runs in O(n) time by leveraging the bounded frequency range.
+
+---
+
+**2. Majority Element – Boyer-Moore Voting Algorithm**  
+- **Problem:** Find the element that appears more than ⌊n / 2⌋ times in an array.  
+- **Folder:** [/arrays/majority-element](./arrays/majority-element-half)  
+- **Insight:** Maintain a `count` and a `candidate`. Reset candidate when `count` is 0, increment if the same element is found, otherwise decrement. By cancellation, the majority element always survives. O(n) time, O(1) space.
+
+
 
 
 
