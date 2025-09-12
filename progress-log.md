@@ -95,6 +95,21 @@
 - **Folder:** [/arrays/majority-element](./arrays/majority-element-half)  
 - **Insight:** Maintain a `count` and a `candidate`. Reset candidate when `count` is 0, increment if the same element is found, otherwise decrement. By cancellation, the majority element always survives. O(n) time, O(1) space.
 
+---
+
+## ✅ Day 6 (2025-09-12)
+
+**1. Reverse Words in a String**  
+- **Problem:** Reverse the order of words in a string, ensuring only a single space between words and no leading/trailing spaces.  
+- **Folder:** [/strings/reverse-words](./strings/reverse-words)  
+- **Insight:** Traverse the string backwards, skip spaces, extract words, and append them to the result with single spaces. This avoids extra reversing steps and ensures correct formatting. O(n) time, O(n) space.
+
+---
+
+**2. Rotate Image (90 Degrees Clockwise)**  
+- **Problem:** Rotate an `n x n` matrix by 90 degrees in place.  
+- **Folder:** [/matrix/rotate-image](./matrix/rotate-matrix-90deg)  
+- **Insight:** Use the two-step trick — transpose the matrix (swap across diagonal) and then reverse each row. This achieves in-place rotation without extra space. O(n²) time, O(1) space.
 
 
 
