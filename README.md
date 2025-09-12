@@ -43,16 +43,10 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
     ([code](./arrays/majority-element-half/solution.cpp))  
 ---
 
-## ✅ Day 6 (2025-09-12)
-
-**1. Reverse Words in a String**  
-- **Problem:** Reverse the order of words in a string. Ensure only a single space between words, and remove leading/trailing spaces.  
-- **Folder:** [/strings/reverse-words](./strings/reverse-words)  
-- **Insight:** Start from the end of the string, skip spaces, identify each word, and build the result string. Appending words as you go ensures reversed order. This avoids extra reversing and trims unnecessary spaces. Runs in O(n) time with O(n) space.
-
+- ✅ **Day 6**:  
+  - Reverse Words in a String  
+    ([code](./strings/reverse-words/solution.cpp))  
+  - Rotate Matrix(Image) – 90 Degrees Clockwise  
+    ([code](./matrix/rotate-matrix-90deg/solution.cpp))  
 ---
 
-**2. Rotate Image (90 Degrees Clockwise)**  
-- **Problem:** Rotate an `n x n` matrix by 90 degrees clockwise in place.  
-- **Folder:** [/matrix/rotate-image](./matrix/rotate-matrix-90deg)  
-- **Insight:** First **transpose** the matrix (swap across the main diagonal), then **reverse each row**. This two-step trick achieves the rotation in place without allocating extra space. Runs in O(n²) time and O(1) space.
