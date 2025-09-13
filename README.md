@@ -50,3 +50,7 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
     ([code](./matrix/rotate-matrix-90deg/solution.cpp))  
 ---
 
+- ✅ **Day 7**:  
+  - Linked List Basics – Creation, Insertion & Deletion Utilities  
+    ([code](./linked-list/linked-list-basics/solution.cpp))  
+---

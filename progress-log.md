@@ -111,6 +111,12 @@
 - **Folder:** [/matrix/rotate-image](./matrix/rotate-matrix-90deg)  
 - **Insight:** Use the two-step trick — transpose the matrix (swap across diagonal) and then reverse each row. This achieves in-place rotation without extra space. O(n²) time, O(1) space.
 
+## ✅ Day 7 (2025-09-13)
+
+**1. Linked List Basics – Creation, Insertion & Deletion Utilities**  
+- **Problem:** Implement a singly linked list with operations for creation, traversal, insertion (head, tail, k-th), and deletion (head, tail, k-th).  
+- **Folder:** [/linked-list/linked-list-basics](./linked-list/linked-list-basics)  
+- **Insight:** Learned the importance of memory management (`new` / `delete`), safe pointer handling, and constructor initializer lists. Fixed common pitfalls like missing `temp = temp->next`, unsafe `nullptr` dereferences, and incorrect returns wiping the list. Final version is modular, memory-safe, and interview-ready.  
 
 
 
