@@ -118,5 +118,47 @@
 - **Folder:** [/linked-list/linked-list-basics](./linked-list/linked-list-basics)  
 - **Insight:** Learned the importance of memory management (`new` / `delete`), safe pointer handling, and constructor initializer lists. Fixed common pitfalls like missing `temp = temp->next`, unsafe `nullptr` dereferences, and incorrect returns wiping the list. Final version is modular, memory-safe, and interview-ready.  
 
+---
+# ✅ Day 8 (2025-09-14)
+
+**1. Reverse Linked List (Recursive)**
+
+* **Problem:** Reverse a singly linked list using recursion.
+* **Folder:** [/linked-list/reverse-linked-list-recursive](./linked-list/reverse-linked-list-recursive)
+* **Insight:** Base case when `head == nullptr` or `head->next == nullptr`. Recursively reverse rest, then adjust pointers (`front->next = head; head->next = nullptr`). Clean recursive elegance with O(n) time and O(n) stack space.
+
+---
+
+**2. Reverse Linked List (Iterative)**
+
+* **Problem:** Reverse a singly linked list iteratively.
+* **Folder:** [/linked-list/reverse-linked-list-iterative](./linked-list/reverse-linked-list-iterative)
+* **Insight:** Use three pointers (`prev`, `head`, `temp`). Iteratively reverse direction of links until `head` reaches null. O(n) time, O(1) space.
+
+---
+
+**3. Find Middle of Linked List**
+
+* **Problem:** Return middle node of singly linked list.
+* **Folder:** [/linked-list/find-middle](./linked-list/find-middle)
+* **Insight:** Use two pointers (`slow`, `fast`). `slow` moves 1 step, `fast` moves 2 steps. When `fast` reaches end, `slow` is at middle. O(n) time, O(1) space.
+
+---
+
+**4. Merge Overlapping Intervals**
+
+* **Problem:** Merge all overlapping intervals in array.
+* **Folder:** [/arrays/merge-overlapping-intervals](./arrays/merge-overlapping-intervals)
+* **Insight:** Sort intervals. Traverse, if overlap with last inserted → merge by updating end. Else push as new interval. Efficient O(n log n).
+
+---
+
+**5. Maximum Product Subarray**
+
+* **Problem:** Find contiguous subarray with largest product.
+* **Folder:** [/arrays/maximum-product-subarray](./arrays/maximum-product-subarray)
+* **Insight:** Track prefix and suffix products. Reset on zero. Keep max across traversal. Handles negatives naturally. O(n) time, O(1) space.
+
+---
 
 

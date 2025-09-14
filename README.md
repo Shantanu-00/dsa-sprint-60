@@ -54,3 +54,15 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
   - Linked List Basics – Creation, Insertion & Deletion Utilities  
     ([code](./linked-list/linked-list-basics/solution.cpp))  
 ---
+- ✅ **Day 8**:  
+  - Reverse Linked List – Recursive Approach  
+    ([code](./linked-list/linked-list-reversal-recursive/solution.cpp))  
+  - Reverse Linked List – Iterative Approach  
+    ([code](./linked-list/linked-list-reversal-iterative/solution.cpp))  
+  - Find Middle of Linked List – Fast & Slow Pointer  
+    ([code](./linked-list/find-middle/solution.cpp))  
+  - Merge Overlapping Intervals – Optimized Greedy  
+    ([code](./arrays/merge-overlapping-intervals/solution.cpp))  
+  - Maximum Product Subarray – Prefix & Suffix Scan  
+    ([code](./arrays/maximum-product-subarray/solution.cpp))  
+---
