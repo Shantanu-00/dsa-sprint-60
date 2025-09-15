@@ -13,7 +13,7 @@
 
 **2. Maximum Subarray using Kadane's Algorithm**  
 - **Problem:** Maximum Subarray using Kadane's Algorithm  
-- **Folder:** [/arrays/kadanes-algorithm-max-subarray](./arrays/kadanes-algorithm-max-subarray)  
+- **Folder:** [/arrays/kadanes-algorithm-max-subarray](./arrays/Kadane's-algorithm-max-subarray)  
 - **Insight:** Iterate through the array, maintain running sum, and update `max_sum_so_far`. If the sum drops below `0`, reset it to `0` — no point in considering a subarray if it reduces the answer.
 
 ---
@@ -160,5 +160,37 @@
 * **Insight:** Track prefix and suffix products. Reset on zero. Keep max across traversal. Handles negatives naturally. O(n) time, O(1) space.
 
 ---
+## ✅ Day 9 (2025-09-15)
+
+**1. Linked List Cycle Detection (Floyd’s Algorithm)**
+
+* **Problem:** Detect if a singly linked list has a cycle using fast & slow pointers.
+* **Folder:** [/linked-list/linked-list-cycle-detect](./linked-list/loop-detect)
+* **Insight:** Learned to always check `fast != NULL && fast->next != NULL` to avoid runtime errors. Proved that if a cycle exists, slow & fast will definitely meet.
+
+**2. Linked List Cycle Start (Floyd’s + Reset Trick)**
+
+* **Problem:** Find the node where the cycle begins.
+* **Folder:** [/linked-list/linked-list-cycle-start](./linked-list/loop-start)
+* **Insight:** After meeting inside the cycle, resetting one pointer to `head` and moving both one step guarantees intersection at the cycle start.
+
+**3. Linked List Cycle Length**
+
+* **Problem:** Find the length of the loop in a linked list.
+* **Folder:** [/linked-list/linked-list-cycle-length](./linked-list/length-of-loop)
+* **Insight:** After detecting the cycle, keeping one pointer fixed and moving the other until it returns gives the exact cycle length. Strengthened understanding of how Floyd’s algorithm works internally.
+
+---
+
+
+* ✅ **Day 9**:
+
+  * Detect Cycle in Linked List ([code](./linked-list/detect-cycle/solution.cpp))
+  * Find Starting Point of Cycle in Linked List ([code](./linked-list/find-cycle-start/solution.cpp))
+  * Find Length of Cycle in Linked List ([code](./linked-list/find-cycle-length/solution.cpp))
+
+---
+
+
 
 

@@ -1,66 +1,64 @@
-# 🎯 Next Permutation of an Integer Array
+# 🎯 Two Sum – Find Pair with Target Sum
 
 ## 📌 Problem  
-Given an array of integers `nums`, rearrange its elements to form the **next lexicographically greater permutation**.  
-If such arrangement is not possible (i.e., the array is in descending order), rearrange it to the **lowest possible order** (i.e., sorted in ascending order).  
-The replacement must be **in-place** and use only **constant extra memory**.
+Given an array of integers `nums` and an integer `target`, return the **indices of the two numbers** such that they add up to `target`.  
+You may assume that **each input has exactly one solution**, and you **may not use the same element twice**.  
+Return the answer in **any order**.
 
 **Example:**  
 ```
+Input: nums = [2, 7, 11, 15], target = 9  
+Output: [0, 1]  // Because nums[0] + nums[1] == 9
 
-Input: nums = \[1, 2, 3]
-Output: \[1, 3, 2]
+Input: nums = [3, 2, 4], target = 6  
+Output: [1, 2]
 
-Input: nums = \[3, 2, 1]
-Output: \[1, 2, 3]
-
-Input: nums = \[2, 3, 1]
-Output: \[3, 1, 2]
-
+Input: nums = [3, 3], target = 6  
+Output: [0, 1]
 ```
 
 ---
 
 ## 💡 Intuition  
 
-To find the next lexicographic permutation, we follow **three key steps**:  
+To find two numbers that sum up to the target, we can use a **hash map** to store previously seen numbers and their indices:
 
-1. **Find the pivot index**  
-   - Traverse from right to left and locate the first index `i` such that `nums[i] < nums[i + 1]`.  
-   - This is the position where rearrangement must occur.  
-   - If no such index exists, the array is strictly descending → reverse it to get the smallest order.  
+1. **Iterate through the array**  
+   - For each element `nums[i]`, compute the complement: `target - nums[i]`.
 
-2. **Find the next greater element**  
-   - From the end of the array, find the first element greater than `nums[i]`.  
-   - Swap this element with the pivot.  
+2. **Check if the complement exists**  
+   - If it’s already in the map, we’ve found our pair → return their indices.
 
-3. **Reverse the suffix**  
-   - Reverse the subarray from `i + 1` to the end.  
-   - This ensures the suffix is in the smallest possible order after the swap.  
+3. **Otherwise, store the current number**  
+   - Add `nums[i]` and its index to the map for future lookup.
+
+This approach avoids nested loops and ensures **constant-time lookup** for complements.
 
 ---
 
 ## ⏱ Complexity  
 
-* **Time:** `O(n)` – each step requires only linear traversal  
-* **Space:** `O(1)` – done in-place with no extra memory  
+* **Time:** `O(n)` – single pass through the array  
+* **Space:** `O(n)` – storing up to `n` elements in the hash map  
 
 ---
 
 ## 🧠 Key Insight  
 
-* The **next permutation** is the smallest permutation that is strictly greater than the current one.  
-* If the array is already the largest permutation, simply reversing it gives the smallest.  
-* This method ensures minimal change while maintaining lexicographic order.  
+* The hash map acts as a **memory of previously seen numbers**, allowing us to instantly check if the required complement exists.  
+* This is a classic example of **trading space for time**—we use extra memory to achieve linear time complexity.  
+* The problem guarantees one solution, so we can safely return as soon as we find a match.
 
 ---
 
 ## 🏷️ Pattern Tags  
 
-* Array Manipulation  
-* Greedy  
-* Lexicographic Ordering  
-* In-place Algorithms  
+* Hashing  
+* Array  
+* Two-Pointer (conceptually)  
+* Lookup Optimization  
 * Interview Problem  
+
+---
 
 
