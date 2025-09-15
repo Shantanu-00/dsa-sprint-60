@@ -66,3 +66,28 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
   - Maximum Product Subarray – Prefix & Suffix Scan  
     ([code](./arrays/maximum-product-subarray/solution.cpp))  
 ---
+
+
+## ✅ Day 9 (2025-09-15)
+
+**1. Linked List Cycle Detection (Floyd’s Algorithm)**
+
+* **Problem:** Detect if a singly linked list has a cycle using fast & slow pointers.
+* **Folder:** [/linked-list/loop-detection](./linked-list/loop-detection)
+* **Insight:** Learned to always check `fast != NULL && fast->next != NULL` to avoid runtime errors. Proved that if a cycle exists, slow & fast will definitely meet.
+
+**2. Linked List Cycle Start (Floyd’s + Reset Trick)**
+
+* **Problem:** Find the node where the cycle begins.
+* **Folder:** [/linked-list/linked-list-cycle-start](./linked-list/loop-start)
+* **Insight:** After meeting inside the cycle, resetting one pointer to `head` and moving both one step guarantees intersection at the cycle start.
+
+**3. Linked List Cycle Length**
+
+* **Problem:** Find the length of the loop in a linked list.
+* **Folder:** [/linked-list/linked-list-cycle-length](./linked-list/length-of-loop)
+* **Insight:** After detecting the cycle, keeping one pointer fixed and moving the other until it returns gives the exact cycle length. Strengthened understanding of how Floyd’s algorithm works internally.
+
+---
+
+
