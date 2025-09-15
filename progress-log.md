@@ -183,13 +183,6 @@
 ---
 
 
-* ✅ **Day 9**:
-
-  * Detect Cycle in Linked List ([code](./linked-list/detect-cycle/solution.cpp))
-  * Find Starting Point of Cycle in Linked List ([code](./linked-list/find-cycle-start/solution.cpp))
-  * Find Length of Cycle in Linked List ([code](./linked-list/find-cycle-length/solution.cpp))
-
----
 
 
 
