@@ -75,3 +75,8 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
   * Find Length of Cycle in Linked List ([code](./linked-list/find-cycle-length/solution.cpp))
 
 ---
+- ✅ **Day 10**:  
+  - Palindrome Linked List ([code](./linked-list/linked-list-palindrome/solution.cpp))  
+  - Remove N-th Node from End ([code](./linked-list/remove-nth-node-end/solution.cpp))  
+  - Delete Middle Node ([code](./linked-list/delete-middle/solution.cpp))  
+---

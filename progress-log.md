@@ -182,6 +182,29 @@
 
 ---
 
+## ✅ Day 10 (2025-09-16)
+
+**1. Palindrome Linked List**
+
+* **Problem:** Check if a singly linked list is a palindrome.
+* **Folder:** [/linked-list/linked-list-palindrome](./linked-list/check-palindrome)
+* **Insight:** Split the list using fast/slow pointers, reverse the second half, and compare node by node. Don’t forget to restore the list at the end to maintain structure. Learned importance of handling odd/even lengths separately.
+
+**2. Remove N-th Node from End**
+
+* **Problem:** Remove the n-th node from the end of a linked list in one pass.
+* **Folder:** [/linked-list/remove-nth-node-end](./linked-list/delete-n-from-last)
+* **Insight:** Used two-pointer gap technique (fast pointer moves n steps ahead). Edge case: deleting the head when `n == length`. Managed memory safety with explicit `delete`.
+
+**3. Delete Middle Node**
+
+* **Problem:** Delete the middle node of a linked list.
+* **Folder:** [/linked-list/delete-middle](./linked-list/delete-middle)
+* **Insight:** Used fast/slow pointers to locate middle. For even length, deletes the second middle. Key lesson: always check single-node/empty list separately.
+
+---
+
+
 
 
 
