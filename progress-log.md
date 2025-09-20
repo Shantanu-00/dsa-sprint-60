@@ -204,6 +204,22 @@
 
 ---
 
+## ✅ Day 11 (2025-09-17)
+
+**1. Sort Linked List (Merge Sort on Linked List)**
+
+* **Problem:** Sort a singly linked list in `O(n log n)` time using constant space.
+* **Folder:** [/linked-list/sort-list](./linked-list/merge-sort)
+* **Insight:** Implemented **merge sort** with `mid()` for splitting and `mergeSort()` for merging. Learned that linked list merge sort avoids extra space unlike arrays.
+
+**2. Odd-Even Linked List**
+
+* **Problem:** Rearrange linked list nodes so that all odd-indexed nodes come before even-indexed nodes.
+* **Folder:** [/linked-list/odd-even-list](./linked-list/odd-even-seperation)
+* **Insight:** Used **two-pointer separation** (`odd` & `even`) with careful handling of `evenHead`. Ensured stable in-place reordering with `O(1)` extra space.
+
+---
+
 
 
 
