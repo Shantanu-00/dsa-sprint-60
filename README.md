@@ -86,5 +86,14 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
   * Sort Linked List (Merge Sort) ([code](./linked-list/merge-sort/solution.cpp))
   * Odd-Even Linked List ([code](./linked-list/odd-even-seperation/solution.cpp))
 
+
 ---
+
+* ✅ **Day 12**:
+
+  * Plus One in Linked List ([code](./linked-list/add-1-to-linked-list/solution.cpp))
+  * Intersection of Two Linked Lists ([code](./linked-list/intersection-point/solution.cpp))
+
+---
+
 

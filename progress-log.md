@@ -220,6 +220,23 @@
 
 ---
 
+## ✅ Day 12 (2025-09-18)
+
+**1. Plus One in Linked List**
+
+* **Problem:** Given a non-empty linked list representing a non-negative integer, add one to it and return the resulting list.
+* **Folder:** [/linked-list/add-1-to-linked-list](./linked-list/add-1-to-linked-list)
+* **Insight:** Solved with **recursive carry propagation** from the tail. Learned how recursion naturally handles the last node first. Added a dummy node when a final carry remained (e.g., 999 → 1000).
+
+**2. Intersection of Two Linked Lists**
+
+* **Problem:** Return the node at which two linked lists intersect, or `nullptr` if they don’t.
+* **Folder:** [/linked-list/intersection-point](./linked-list/intersection-point)
+* **Insight:** Applied the **two-pointer switching trick**: traverse both lists, and when a pointer reaches the end, switch it to the other head. Guarantees meeting at intersection or at `nullptr`. Elegant `O(m+n)` time and `O(1)` space.
+
+---
+
+
 
 
 
