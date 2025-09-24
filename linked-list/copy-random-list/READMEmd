@@ -1,0 +1,121 @@
+# 🎯 Copy List with Random Pointer
+
+## 📌 Problem
+
+A linked list of length `n` is given such that each node contains an additional random pointer, which could point to any node in the list or be null.
+
+Construct a **deep copy** of the list. The deep copy should consist of exactly `n` new nodes, where each new node has its value set to the value of its corresponding original node. Both the `next` and `random` pointer of the new nodes should point to new nodes in the copied list such that the pointers in the original list and copied list represent the same list state.
+
+---
+
+## 💡 Example
+
+### Example 1
+**Input:** 
+```
+Original: 1 → 2 → 3 → 4
+Random:   1 → 3, 2 → 1, 3 → 3, 4 → 2
+```
+
+**Output:** Deep copy with identical structure and random pointers
+
+### Example 2
+**Input:** `head = [[7,null],[13,0],[11,4],[10,2],[1,0]]`  
+**Output:** Deep copy with same random pointer relationships
+
+### Example 3
+**Input:** `head = [[1,1],[2,1]]`  
+**Output:** Deep copy with random pointers pointing to corresponding nodes
+
+---
+
+## 🧠 Approach – Three-Pass Interweaving Technique
+
+The solution uses an elegant **three-pass algorithm** that interweaves original and copy nodes:
+
+1. **Create Copy Nodes** interleaved with original nodes
+2. **Assign Random Pointers** using the interweaved structure
+3. **Separate Lists** to extract the deep copy
+
+---
+
+## ⚡ Algorithm Steps
+
+### **Pass 1: `createcopylist`**
+- Create copy nodes and insert them between original nodes
+- Original: `A → B → C` becomes `A → A' → B → B' → C → C'`
+- This creates a mapping where `original->next` is always its copy
+
+### **Pass 2: `addrandompointertocopylist`**
+- For each original node, set its copy's random pointer
+- If `original->random` exists, then `copy->random = original->random->next`
+- This works because `original->random->next` is the copy of the random target
+
+### **Pass 3: `seperatethecopylist`**
+- Separate the interweaved lists into original and copy lists
+- Restore original list's next pointers
+- Extract the copy list using a dummy node
+
+---
+
+## ⏱️ Complexity Analysis
+
+* **Time Complexity:** `O(n)`  
+  - Three linear passes through the list
+  - Each node processed exactly three times
+
+* **Space Complexity:** `O(1)` auxiliary space (excluding the copy itself)  
+  - Only uses pointer variables
+  - The copy list is part of the output requirement
+
+---
+
+## ✅ Key Insights
+
+* **Interweaving Technique:** Inserting copies between originals creates natural mapping
+* **Random Pointer Assignment:** `copy->random = original->random->next` is the key insight
+* **In-Place Construction:** Builds the copy without hash maps or extra data structures
+* **List Separation:** Cleanly restores both original and copy lists
+
+---
+
+## 🔧 Key Code Sections
+
+### **Node Insertion:**
+```cpp
+Node* copyNode = new Node(head->val);
+copyNode->next = head->next;
+head->next = copyNode;
+head = head->next->next;
+```
+
+### **Random Pointer Assignment:**
+```cpp
+if(head->random){
+    head->next->random = head->random->next;
+}
+```
+
+### **List Separation:**
+```cpp
+Node* nextelement = head->next->next;
+res->next = head->next;
+head->next = nextelement;
+```
+
+---
+
+## 🎯 Solution Highlights
+
+- **No hash map required** - uses clever pointer manipulation
+- **Preserves original list** structure after copying
+- **Optimal O(n) time** with O(1) auxiliary space
+- **Elegant three-pass algorithm** with clear separation of concerns
+
+---
+
+## 📝 Code Reference
+
+[Solution Code](./solution.cpp)
+
+---

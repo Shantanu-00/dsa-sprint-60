@@ -251,6 +251,27 @@
 * **Insight:** Applied **group-wise reversal with pointer management**. Used recursive reversal for clarity and a helper function to find k-th nodes. Learned careful pointer updating to maintain list connectivity between reversed groups. Crucial insight was setting `kthNode->next = nullptr` to properly separate groups before reversal.
 
 ---
+## ✅ Day 14 (2025-09-20)
+
+**1. Flatten Multilevel Linked List**
+
+* **Problem:** Flatten a multilevel doubly linked list into a single-level sorted list.
+* **Folder:** [/linked-list/flatten-multilevel](./linked-list/flatten-multilevel)
+* **Insight:** Applied **recursive merge sort approach** to handle nested structures. Learned to treat horizontal and vertical lists as separate sorted lists to merge. Key was using the `child` pointer for vertical traversal and carefully setting `next` pointers to `nullptr` to maintain flattened structure. The merge operation naturally maintained sorted order.
+
+**2. Rotate Linked List**
+
+* **Problem:** Rotate a linked list to the right by k places.
+* **Folder:** [/linked-list/rotate-list](./linked-list/rotate-list)
+* **Insight:** Used **circular list technique** for efficient rotation. Learned to calculate effective rotations using `k % length` to handle large k values. The key insight was making the list circular temporarily, then breaking it at the new tail position (`length - k`). This approach avoided multiple rotations and worked in single pass.
+
+**3. Copy List with Random Pointer**
+
+* **Problem:** Create a deep copy of a linked list where each node has an additional random pointer.
+* **Folder:** [/linked-list/copy-random-list](./linked-list/copy-random-list)
+* **Insight:** Implemented the elegant **three-pass interweaving technique**. Learned that inserting copy nodes between originals creates natural mapping without hash tables. The crucial insight was `copy->random = original->random->next` for random pointer assignment. The separation pass efficiently restored both original and copy lists.
+
+---
 
 
 
