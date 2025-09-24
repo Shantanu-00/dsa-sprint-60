@@ -95,5 +95,11 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
   * Intersection of Two Linked Lists ([code](./linked-list/intersection-point/solution.cpp))
 
 ---
+* ✅ **Day 13**:
+
+  * Add 2 Linked-list([code](./linked-list/add-two-numbers/solution.cpp))
+  * Reverse K Groups in linked-list([code](./linked-list/reverse-k-group/solution.cpp))
+
+---
 
 

@@ -236,6 +236,22 @@
 
 ---
 
+## ✅ Day 13 (2025-09-19)
+
+**1. Add Two Numbers**
+
+* **Problem:** Given two non-empty linked lists representing two non-negative integers (digits stored in reverse order), add the two numbers and return the sum as a linked list.
+* **Folder:** [/linked-list/add-two-numbers](./linked-list/add-two-numbers)
+* **Insight:** Implemented **digit-by-digit addition with carry propagation**. Used a dummy node technique to simplify list construction. Learned to handle lists of different lengths seamlessly and properly manage final carry cases (e.g., 999 + 1 = 1000). Key was processing while either list has nodes remaining.
+
+**2. Reverse Nodes in k-Group**
+
+* **Problem:** Reverse linked list nodes in groups of k. If remaining nodes < k, leave them as-is.
+* **Folder:** [/linked-list/reverse-k-group](./linked-list/reverse-k-group)
+* **Insight:** Applied **group-wise reversal with pointer management**. Used recursive reversal for clarity and a helper function to find k-th nodes. Learned careful pointer updating to maintain list connectivity between reversed groups. Crucial insight was setting `kthNode->next = nullptr` to properly separate groups before reversal.
+
+---
+
 
 
 
