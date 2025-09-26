@@ -110,3 +110,10 @@ Goal: Solve minimum 2 problems/day + extract insights and patterns.
 
 ---
 
+
+* ✅ **Day 15**:
+
+  * Bubble Sort Algorithm([code](./sorting/bubble-sort/solution.cpp))
+  * Selection Sort Algorithm([code](./sorting/selection-sort/solution.cpp))
+
+---

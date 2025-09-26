@@ -272,6 +272,21 @@
 * **Insight:** Implemented the elegant **three-pass interweaving technique**. Learned that inserting copy nodes between originals creates natural mapping without hash tables. The crucial insight was `copy->random = original->random->next` for random pointer assignment. The separation pass efficiently restored both original and copy lists.
 
 ---
+## ✅ Day 15 (2025-09-21)
+
+**1. Bubble Sort Algorithm**
+
+* **Problem:** Implement the bubble sort algorithm to sort an array of integers in ascending order.
+* **Folder:** [/sorting/bubble-sort](./sorting/bubble-sort)
+* **Insight:** Learned the **adjacent comparison and swapping** technique where larger elements "bubble up" to their correct positions. Key understanding was reducing the inner loop range after each pass since the largest elements get placed correctly. The algorithm naturally stops when no swaps occur in a complete pass.
+
+**2. Selection Sort Algorithm**
+
+* **Problem:** Implement the selection sort algorithm to sort an array using minimum element selection.
+* **Folder:** [/sorting/selection-sort](./sorting/selection-sort)
+* **Insight:** Applied the **divide and conquer approach** by maintaining sorted and unsorted portions. The crucial insight was finding the minimum element in the unsorted portion and swapping it with the first unsorted element. Learned that selection sort performs O(n) swaps but always requires O(n²) comparisons regardless of input order.
+
+---
 
 
 
